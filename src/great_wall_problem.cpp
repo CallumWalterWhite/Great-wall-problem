@@ -29,6 +29,12 @@ using namespace std;
 
 const string path = ".\\Great_Wall_Problem-test_data";
 
+struct brick {
+	int index;
+	string north;
+	string south;
+};
+
 unordered_map<string, string> load_bricks(string nSize) {
 	string folder_path_pairs = path + "\\" + nSize + "\\input-pairs-" + nSize + ".txt";
 	ifstream t(folder_path_pairs);
