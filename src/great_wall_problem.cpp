@@ -33,7 +33,7 @@ struct brick {
 	int index;
 	string north;
 	string south;
-}
+};
 
 unordered_map<string, string> load_bricks(string nSize) {
 	string folder_path_pairs = path + "\\" + nSize + "\\input-pairs-" + nSize + ".txt";

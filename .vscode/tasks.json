@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "clang++.exe build active file",
+            "command": "clang++.exe",
+            "args": [
+                ".\\src\\great_wall_problem.cpp",
+                "-o",
+                ".\\build\\great_wall_problem.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": "build",
+            "detail": "compiler: clang++.exe"
+        },
+        {
+            "type": "shell",
+            "label": "run exe file",
+            "command": "./build/great_wall_problem.exe",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": "build",
+            "detail": "compiler: clang++.exe"
+        }
+    ]
+}
