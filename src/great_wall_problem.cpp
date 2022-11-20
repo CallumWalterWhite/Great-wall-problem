@@ -43,8 +43,6 @@ list<string> load_results(string file_path) {
 	string line;
 	ifstream t(file_path);
 	list<string> results;
-	vector<string> segment_list;
-	string segment;
 	try{
 		while (getline(t, line))
 		{
