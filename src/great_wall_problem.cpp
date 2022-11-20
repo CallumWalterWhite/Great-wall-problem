@@ -205,9 +205,8 @@ int main(int argc, char *argv[])
 	}
 	steady_clock::time_point finishTime = steady_clock::now();
 	nanoseconds timeTaken = duration_cast<nanoseconds>(finishTime - startTime);
-    //std::cout << "Data structure: " + data_strcuture << std::endl;
-    //std::cout << "Time taken: " << timeTaken.count() << " nanoseconds." << std::endl;
-	//bool order_correct = check_order(sequence, result_file_location);
-    //std::cout << "Is order correct: " << order_correct << std::endl;
-    std::cout << timeTaken.count() << std::endl;
+    std::cout << "Data structure: " + data_strcuture << std::endl;
+    std::cout << "Time taken: " << timeTaken.count() << " nanoseconds." << std::endl;
+	bool order_correct = check_order(sequence, result_file_location);
+    std::cout << "Is order correct: " << order_correct << std::endl;
 }
